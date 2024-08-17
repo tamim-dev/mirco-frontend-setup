@@ -1,0 +1,125 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["node_modules/*"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "accessor-pairs": "error",
+    "array-callback-return": "error",
+    "arrow-spacing": "error",
+    "block-scoped-var": "error",
+    "class-methods-use-this": "off",
+    "complexity": "error",
+    "consistent-return": "error",
+    "curly": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "dot-location": ["error", "property"],
+    "generator-star-spacing": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true }
+      }
+    ],
+    "no-caller": "error",
+    "no-empty-function": "error",
+    "eqeqeq": "error",
+    "no-eq-null": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-extra-label": "error",
+    "no-floating-decimal": "error",
+    "no-iterator": "error",
+    "no-labels": "error",
+    "no-lone-blocks": "error",
+    "no-mixed-operators": "error",
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true,
+        "exceptions": {
+          "AssignmentExpression": true,
+          "ArrowFunctionExpression": true,
+          "CallExpression": true,
+          "VariableDeclarator": true
+        }
+      }
+    ],
+    "no-multi-str": "error",
+    "no-new": "error",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-octal-escape": "error",
+    "no-proto": "error",
+    "no-return-await": "error",
+    "no-script-url": "error",
+    "no-self-compare": "error",
+    "no-sequences": "error",
+    "no-throw-literal": "error",
+    "no-unmodified-loop-condition": "error",
+    "no-unused-expressions": "error",
+    "no-useless-call": "error",
+    "no-useless-concat": "error",
+    "no-var": "error",
+    "no-void": "error",
+    "no-with": "error",
+    "no-confusing-arrow": "error",
+    "no-duplicate-imports": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "object-shorthand": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "off",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "prefer-promise-reject-errors": "error",
+    "quotes": ["error", "single"],
+    "rest-spread-spacing": "error",
+    "require-await": "error",
+    "semi": ["error", "always"],
+    "template-curly-spacing": "error",
+    "wrap-iife": "error",
+    "yoda": "error",
+    "yield-star-spacing": "error"
+  },
+  "plugins": ["react", "import", "prettier", "eslint-plugin-prettier"]
+}

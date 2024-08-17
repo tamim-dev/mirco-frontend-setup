@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "assets/*": ["./src/assets/*"],
+      "components/*": ["./src/components/*"],
+      "contexts/*": ["./src/contexts/*"],
+      "features/*": ["./src/features/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "models/*": ["./src/models/*"],
+      "providers/*": ["./src/providers/*"],
+      "routes/*": ["./src/routes/*"],
+      "services/*": ["./src/services/*"],
+      "utils/*": ["./src/utils/*"],
+      "styles/*": ["./src/styles/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5",
+    "typeRoots": ["./node_modules/@types", "./node_modules/**/*.d.ts"]
+  },
+  "include": ["globals.d.ts", "**/*.ts", "**/*.tsx"]
+}

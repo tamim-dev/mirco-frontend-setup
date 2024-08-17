@@ -1,0 +1,19 @@
+table,
+tr,
+td {
+  border: 1px solid #bfcbd8;
+  padding: 20px 16px;
+}
+
+table {
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+}
+
+table th {
+  background-color: #373a40;
+  color: white;
+  padding: 20px 16px;
+  text-transform: uppercase;
+}

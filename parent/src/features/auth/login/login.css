@@ -1,0 +1,156 @@
+.login-container {
+  background-color: #e9e9e9;
+  /* background-color: white ; */
+  height: 100vh;
+  display: flex;
+}
+
+.image-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-area {
+  background-color: #ffffff;
+  margin: 10px;
+  height: calc(100vh-20px);
+  width: 25vw;
+  border-radius: 10px;
+  box-shadow: #8080806a 0 0 15px;
+  padding: 50px 100px;
+}
+
+.login-area > img {
+  margin: 0 auto;
+  display: block;
+}
+
+.login-area > h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 0 10px;
+  color: #1b1d21;
+}
+
+.login-area > p {
+  text-align: center;
+  color: #858688;
+  margin-bottom: 50px;
+}
+
+.credential-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.credential-section > input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #858688;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  cursor: text;
+  color: #1b1d21;
+}
+
+.credential-section > input::placeholder {
+  color: #1b1d21;
+}
+
+.error-input {
+  border-color: #ed4337 !important;
+  color: #ed4337 !important;
+}
+
+.error-input::placeholder {
+  color: #ed4337 !important;
+}
+
+.remember-me-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 40px;
+}
+
+.remember-me-section > div > label,
+input {
+  cursor: pointer;
+  color: #858688;
+}
+
+.login-area a {
+  color: #6e6f6f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-area a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.login-area button {
+  display: block;
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.login-area button:hover {
+  box-shadow: #00000050 0 1px 5px;
+}
+
+.login-btn {
+  background-color: #1b1d21;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.login-btn:hover {
+  box-shadow: #1b1d21 1px 1px 5px !important;
+}
+
+.signup-me-section {
+  margin-top: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.disable {
+  opacity: 0.85;
+  cursor: not-allowed !important;
+}
+
+media only screen and (max-width: 1400px) {
+  .login-area {
+    padding: 30px 90px;
+  }
+  .login-area > h3 {
+    font-size: 30px;
+    margin: 30px 0 8px;
+  }
+  .login-area > p {
+    margin-bottom: 40px;
+  }
+  .credential-section {
+    gap: 20px;
+  }
+  .credential-section > input {
+    border-bottom: 2px solid #858688;
+    font-size: 1rem;
+    padding: 5px 0;
+  }
+}
